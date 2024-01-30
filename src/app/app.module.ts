@@ -2,15 +2,22 @@ import { NgModule } from '@angular/core';
 import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
+import { CounterModule } from './counter/counter.module';
 import { AppComponent } from './app.component';
+import { HeroesModule } from './heroes/heroes.module';
+import { DbzModule } from './dbz/dbz.module';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CounterModule,
+    HeroesModule,
+    DbzModule
   ],
   providers: [
     provideClientHydration()

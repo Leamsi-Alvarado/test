@@ -1,0 +1,8 @@
+<div class="row mt-5">
+  <div class="col">
+    <app-dbz-list [charactersList]="characters" (deletedCharacterID)="deleteByID($event)"></app-dbz-list>
+  </div>
+  <div class="col">
+    <app-dbz-add-character (onNewCharacter)="onNewCharacter($event)"></app-dbz-add-character>
+  </div>
+</div>
