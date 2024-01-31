@@ -9,6 +9,7 @@ import { DbzService } from '../services/dbz.service';
 export class MainPageComponent {
   constructor(private dbzService : DbzService){}
 get characters(): Character[]{
+  console.log("holi")
   return [...this.dbzService.characters]
 }
 onNewCharacter(character: Character):void{
